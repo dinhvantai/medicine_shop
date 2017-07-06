@@ -72,7 +72,7 @@
                                                 <li class="twPc-ArrangeSizeFit">
                                                     <a href="javascript:void(0)">
                                                          <span class="twPc-StatLabel twPc-block">
-                                                            {{ __('Recive Request') }}
+                                                            {{ __('Recieve Request') }}
                                                         </span>
                                                         <span class="twPc-StatValue">
                                                             {{ App\Helpers\Helper::numberIntegerFormat($data['doctor']['request']) }}
@@ -82,7 +82,7 @@
                                                 <li class="twPc-ArrangeSizeFit">
                                                     <a href="javascript:void(0)">
                                                          <span class="twPc-StatLabel twPc-block">
-                                                            {{ __('Make Pescription') }}
+                                                            {{ __('Make Prescription') }}
                                                         </span>
                                                         <span class="twPc-StatValue">
                                                             {{ App\Helpers\Helper::numberIntegerFormat($data['doctor']['prescription']) }}

@@ -2,7 +2,7 @@
 
 return [
     'medicine' => [
-        'items_limit' => 12,
+        'items_limit' => 9,
         'autocomple_limit' => 12,
         'result_limit' => 8,
         'review_limit' => 6,

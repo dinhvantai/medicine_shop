@@ -51,9 +51,6 @@
                 </li>
                 <!-- END Menu Toggle -->
                 <li>
-                    <a href="{{ route('welcome') }}" class="site-nav-sub">{{ __('Home') }}</a>
-                </li>
-                <li>
                     <a href="javascript:void(0)" class="site-nav-sub"><i class="fa fa-angle-down site-nav-arrow"></i>{{ __('Categories') }}</a>
                     <ul>
                         @foreach ($frontendAllParentCategories as $parentCategory)

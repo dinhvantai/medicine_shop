@@ -363,8 +363,8 @@
                                                 @foreach ($data['orders']['list'] as $order)
                                                     <tr>
                                                         <td>
-                                                            <a href="{{ route('admin.orders.detail', [$order->id]) }}">
-                                                                #{{ $order->id }}
+                                                            <a href="{{ route('frontend.order.detail', [$order->id]) }}">
+                                                                {{ $order->id }}
                                                             </a>
                                                         </td>
                                                         <td class="text-center">{{ App\Helpers\Helper::numberIntegerFormat($order->total_items) }}</td>
