@@ -25,11 +25,7 @@
                     <div class="sidebar-block">
                         <ul class="store-menu">
                             @foreach($frontendAllParentCategories as $frontendAllParentCategory)
-                                @if($loop->first)
-                                    <li class="open">
-                                @else
-                                    <li>
-                                @endif
+                                <li class="open">
                                     <a href="javascript:void(0)" class="submenu">
                                         <i class="fa fa-angle-right"></i>
                                         {{ $frontendAllParentCategory->name }}

@@ -28,7 +28,7 @@
                     
                     
                     <div class="col-sm-4 pull-right form-horizontal">
-                        {!! Form::text('doctor', '', ['class' => 'form-control', 'placeholder' => 'Search by name, specialty, place of work ...', 'data-bind' => 'event: {keyup: keyupDoctorSeach}']) !!}
+                        {!! Form::text('doctor', '', ['class' => 'form-control', 'placeholder' => __('Search by name, specialty, place of work ...'), 'data-bind' => 'event: {keyup: keyupDoctorSeach}']) !!}
                     </div>
                     <!-- END Refine Search -->
                 </div>
@@ -56,7 +56,7 @@
 
                                 <!-- Customer Info -->
                                 <div class="block-section text-center doctor-wrap">
-                                    <a href="javascript:void(0)">
+                                    <a data-bind="attr:{href: $root.getLinkProfileUser(id, display_name)}">
                                         <img class="img-circle" data-bind="attr: {src: $root.getLinkAvatarUser(avatar)}">
                                     </a>
                                     <div class="quick-view" data-toggle="modal" data-target="#doctor-show-detail" data-bind="click: $root.viewDetailDoctor">

@@ -85,7 +85,7 @@
                                         {{ __(':num stars', ['num' => 1]) }}
                                     </span>
                                     <div class="progress">
-                                        <div class="progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="200" style="width:{{ $starPercent[0] }}%"></div>
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="200" style="width:{{ $starPercent[0] }}%"></div>
                                     </div>
                                     <span class="rating-bar-count">{{ $countStar[0] }}</span>
                                 </div>
