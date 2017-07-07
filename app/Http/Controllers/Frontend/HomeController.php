@@ -131,7 +131,13 @@ class HomeController extends Controller
     public function jsonDoctorList(Request $request)
     {
         $keyword = $request->keyword;
-        $doctors = User::search($keyword)
+        $doctors = User::where('permission', User::PERMISSION_DOCTER)
+            ->where('display_name', 'like', '%' . $keyword . '%')
+            ->orWhere('position', 'like', '%' . $keyword . '%')
+            ->orWhere('specialize', 'like', '%' . $keyword . '%')
+            ->orWhere('certificate', 'like', '%' . $keyword . '%')
+            ->orWhere('experience', 'like', '%' . $keyword . '%')
+            ->orWhere('workplace', 'like', '%' . $keyword . '%')
             ->where('permission', User::PERMISSION_DOCTER)
             ->paginate(config('model.user.doctor_limit'));
             

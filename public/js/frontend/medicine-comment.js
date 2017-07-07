@@ -73,6 +73,7 @@ var CommentViewModel = function()
     self.showEmptyContent = function()
     {
         $('#comment-indicator').addClass('hide');
+        $('#comment-indicator-add-question').addClass('hide');
         swal('Please enter text to question or answer!');
     }
 

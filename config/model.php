@@ -6,7 +6,7 @@ return [
         'autocomple_limit' => 12,
         'result_limit' => 8,
         'review_limit' => 6,
-        'slider_limit' => 9,
+        'slider_limit' => 12,
     ],
 
     'prescription' => [

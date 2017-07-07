@@ -222,7 +222,7 @@
     "per 5": "trên 5",
     "unregister user": "thành viên chưa đăng kí.",
     "Make Request Presctiption": "Yêu cầu tạo Đơn thuốc",
-    "Doctor - Request Prescription": "Bác sĩ - Yêu cầu Đơn thuốc",
+    "Doctor - Request Presctiption": "Bác sĩ - Yêu cầu Đơn thuốc",
     "Not selected": "Chưa chọn",
     "Make prescription for this user!": "Tạo Đơn thuốc cho thành viên này!",
     "Diagnose": "Chuẩn đoán",
@@ -383,5 +383,6 @@
     "Birthday": "Ngày sinh",
     "Details": "Chi tiết",
     "Recieve Request": "Nhận yêu cầu",
-    "Make Prescription": "Tạo Đơn thuốc"
+    "Make Prescription": "Tạo Đơn thuốc",
+    "Only extant :qty :unit :medicine, not enough for you to order!": "Chỉ còn :qty :unit \":medicine\", không đủ để cho bạn đặt hàng!"
 }
