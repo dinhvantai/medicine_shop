@@ -34,9 +34,10 @@ class DatabaseSeeder extends Seeder
             'password'          =>  bcrypt('abc123@!'),
             'phone'             =>  '01234567891',
             'address'           =>  'Ha Noi',
-            'permission'        =>  User::PERMISSION_ADMIN,
+            'permission'        =>  User::PERMISSION_DOCTER,
             'avatar'            =>  '',
         ];
+        
         User::create($dataUserAdmin);
     }
 }

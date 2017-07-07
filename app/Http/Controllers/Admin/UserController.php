@@ -30,7 +30,7 @@ class UserController extends Controller
     public function index()
     {
         $data = [];
-        $users = $this->user->all();
+        $users = $this->user->orderBy('id', 'desc')->paginate(15);
         $data['users'] = $users;
         $data['permissionOption'] = $this->user->getPermissionOption();
 

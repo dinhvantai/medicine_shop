@@ -10,7 +10,7 @@ use Laravel\Scout\Searchable;
 
 class User extends Authenticatable
 {
-    use Notifiable, SoftDeletes, UserRelation, Searchable;
+    use Notifiable, SoftDeletes, UserRelation;
 
     const PERMISSION_USER = 0;
     const PERMISSION_ADMIN = 1;

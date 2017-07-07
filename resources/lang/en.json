@@ -383,5 +383,6 @@
     "Birthday": "Birthday",
     "Details": "Details",
     "Recieve Request": "Recieve Request",
-    "Make Prescription": "Make Prescription"
+    "Make Prescription": "Make Prescription",
+    "Only extant :qty :unit :medicine, not enough for you to order!": "Only extant :qty :unit :medicine, not enough for you to order!"
 }
