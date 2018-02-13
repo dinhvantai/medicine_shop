@@ -67,7 +67,7 @@
 @endsection
 
 @section('custom-javascript')
-    <script src="{!! url('bower_components/AdminLTE/plugins/select2/select2.min.js') !!}"></script>
+    <script src="{!! url('bower_components/select2/dist/js/select2.min.js') !!}"></script>
     <script type="text/javascript">
         $('.select-doctor').select2();
     </script>

@@ -3,7 +3,7 @@
 <script src="{{ asset('bower_components/jquery-sticky/jquery.sticky.js') }}"> </script>
 <!-- Knockout JS -->
 <script src="{!! url('bower_components/knockout/dist/knockout.js') !!}"></script>
-<script src="{!! url('bower_components/AdminLTE/plugins/select2/select2.min.js') !!}"></script>
+<script src="{!! url('bower_components/select2/dist/js/select2.min.js') !!}"></script>
 <script src="{!! url('bower_components/tinymce/tinymce.min.js') !!}"></script>
 <script src="{!! url('bower_components/bootstrap-sweetalert/dist/sweetalert.min.js') !!}"></script>
 <script src="{!! url('bower_components/bootstrap-star-rating/js/star-rating.js') !!}"></script>

@@ -580,12 +580,12 @@
 @endsection
 
 @section('custom-css')
-    <link rel="stylesheet" href="{!! url('bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.css') !!}"/>
+    <link rel="stylesheet" href="{!! url('bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') !!}"/>
 @endsection
 
 @section('custom-javascript')
-    <script src="{!! url('bower_components/AdminLTE/plugins/datatables/jquery.dataTables.min.js') !!}"></script>
-    <script src="{!! url('bower_components/AdminLTE/plugins/datatables/dataTables.bootstrap.min.js') !!}"></script>
+    <script src="{!! url('bower_components/datatables.net/js/jquery.dataTables.min.js') !!}"></script>
+    <script src="{!! url('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') !!}"></script>
     <script type="text/javascript">
         $('#user-order-list').DataTable({
             'order': [0, "desc" ]

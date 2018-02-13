@@ -13,7 +13,7 @@
     <link href="{{ asset('bower_components/bootstrap-star-rating/css/star-rating.min.css') }}" media="all" rel="stylesheet" type="text/css" />
     <link href="{{ asset('bower_components/bootstrap-star-rating/css/theme-krajee-svg.min.css') }}" type="text/css" />
     <link href="{{ asset('bower_components/bootstrap-star-rating/css/theme-krajee-fa.min.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{!! url('bower_components/AdminLTE/plugins/select2/select2.min.css') !!}"/>
+    <link rel="stylesheet" href="{!! url('bower_components/select2/dist/css/select2.min.css') !!}"/>
     {{-- template css --}}
     <link rel="stylesheet" href="{{ asset('/css/template/plugins.css') }}">
     <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
