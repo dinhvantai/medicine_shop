@@ -1,0 +1,15 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+/public/bower_components
+/public/uploads
+/public/slide_images
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+/public/medicines

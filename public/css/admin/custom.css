@@ -1,0 +1,90 @@
+.select2-container--default .select2-selection--multiple .select2-selection__choice
+{
+    background-color: #00c0ef!important;
+    border: 1px solid #00c0ef!important;
+}
+.border-radius-30per {
+	border-radius: 30%
+}
+.padding-left-10px {
+	padding-left: 10px
+}
+.margin-bottom-15px {
+    margin-bottom: 15px;
+}
+
+.padding-top-10px
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.padding-top-5px
+{
+    padding-top: 5px;
+}
+.max-height-200px {
+    max-height: 200px;
+}
+
+.indicator {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    opacity: .7;
+    z-index: 200;
+}
+.indicator .spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+    width: 32px;
+    height: 32px;
+    background: url(../../images/AjaxLoader.gif) no-repeat center;
+    background-size: cover;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.z-index-100 {
+    z-index: 100;
+}
+#admin-sales-line-chart {
+    height: 200px;
+}
+.block-title {
+    margin: -20px -15px 20px;
+    background-color: #f9fafc;
+    border-bottom: 1px solid #eaedf1;
+}
+.block {
+    margin: 0 0 10px;
+    padding: 20px 15px 1px;
+    background-color: #ffffff;
+    border: 1px solid #dbe1e8;
+}
+.block-title h1, .block-title h2, .block-title h3, .block-title h4, .block-title h5, .block-title h6 {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px 16px 7px;
+    font-weight: normal;
+}
+.width-20px{
+    width: 20px;
+}
+@media (min-width: 768px){
+    .form-inline .form-control {
+        width: 75%;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "medicines",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Pham Le Tuan <tuanphamle112@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tuanphamle112/medicine_shop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public/bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "AdminLTE": "admin-lte#^2.3.11",
+    "knockout": "knockoutjs#^3.4.2",
+    "responsive-filemanager": "https://github.com/dinhvantai/responsive-filemanager.git",
+    "tinymce": "^4.6.2",
+    "slick-carousel": "^1.6.0",
+    "jquery-sticky": "^1.0.4",
+    "bootstrap-star-rating": "^4.0.1",
+    "bootstrap-sweetalert": "^1.0.1"
+  }
+}
