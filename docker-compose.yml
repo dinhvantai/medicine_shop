@@ -1,83 +1,53 @@
-version: '2'
+version: '3'
 
-### Change the `teacher` with your own teacher name ###
 services:
-    application:
-        container_name: medicine_application
-        image: debian
-        volumes:
-            - ./:/var/www/laravel
-    workspace:
-        container_name: medicine_workspace
-        restart: always
-        image: framgia/laravel-workspace
-        volumes_from:
-            - application
-        tty: true
-    php-fpm:
-        container_name: medicine_php-fpm
-        restart: always
-        image: framgia/laravel-php-fpm
-        volumes_from:
-            - application
-        expose:
-            - "9000"
-        links:
-            - workspace
-    nginx:
-        container_name: medicine_nginx
-        restart: always
-        image: framgia/laravel-nginx
-        volumes_from:
-            - data
-            - logs
-            - application
-        ports:
-            - "8000:80"
-        links:
-            - php-fpm
-    data:
-        container_name: medicine_data
-        image: debian
-        volumes:
-            - .docker/mysql:/var/lib/mysql
-            - .docker/data:/data
-    data_test:
-        container_name: medicine_data_test
-        image: debian
-        volumes:
-            - .docker/mysql_test:/var/lib/mysql
-            - .docker/data_test:/data
-    logs:
-        container_name: medicine_logs
-        image: debian
-        volumes:
-            - .docker/logs/nginx:/var/log/nginx
-            - .docker/logs/mongodb:/var/log/mongodb
-    mysql:
-        container_name: medicine_mysql
-        restart: always
-        image: mysql
-        volumes_from:
-            - data
-            - logs
-        expose:
-            - "3306"
-        environment:
-            MYSQL_DATABASE: medicine
-            MYSQL_USER: homestead
-            MYSQL_PASSWORD: secret
-            MYSQL_ROOT_PASSWORD: root
-    mysql_test:
-        container_name: medicine_mysql_test
-        restart: always
-        image: mysql
-        volumes_from:
-            - data_test
-        expose:
-            - "3306"
-        environment:
-            MYSQL_DATABASE: homestead_test
-            MYSQL_USER: homestead_test
-            MYSQL_PASSWORD: secret
-            MYSQL_ROOT_PASSWORD: root
+  workspace:
+    container_name: medicine_workspace
+    restart: always
+    build: ./dockers/workspace
+    volumes:
+      - ./:/var/www/laravel
+    tty: true
+    networks:
+      - mynet
+  php-fpm:
+    container_name: medicine_php-fpm
+    restart: always
+    build: dockers/php-fpm
+    volumes:
+      - ./:/var/www/laravel
+    networks:
+      - mynet
+  nginx:
+    container_name: medicine_nginx
+    restart: always
+    build: ./dockers/nginx
+    volumes:
+      - ./:/var/www/laravel
+      - .docker/logs/nginx:/var/log/nginx
+    ports:
+      - "2019:80"
+    networks:
+      - mynet
+  mysql:
+    container_name: medicine_mysql
+    restart: always
+    image: mysql:5.7
+    volumes:
+      - .docker/mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: medicine
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - mynet
+  redis:
+    container_name: medicine_redis
+    restart: always
+    image: redis
+    networks:
+      - mynet
+networks:
+  mynet:
+    driver: bridge
+volumes:
+  db-data:

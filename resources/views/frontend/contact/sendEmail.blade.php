@@ -11,7 +11,7 @@
                 <h2 class="h3 text-center animation-slideUp">{{ __('We will be happy to answer all your questions and work together!') }}</h2>
             </div>
         </section>
-        <section class="site-content site-section">
+        <section class="site-content site-section" style="min-height: 450px">
             <div class="container">
 
                 @include('frontend.components.show-message')
@@ -24,13 +24,13 @@
                         <h4><strong>{{ __('Mail') }}</strong>{{ __(' Us') }}</h4>
                     </div>
                     <div class="col-sm-4 animation-fadeIn">
-                        <a href="{{ asset('https://www.facebook.com/ec.ec.ec.ec.ec.ec6969')}}" target="_blank" class="circle themed-background">
+                        <a href="https://www.facebook.com" target="_blank" class="circle themed-background">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                         </a>
                         <h4><strong>{{ __('Like ') }}</strong>{{ __(' Us on Facebook') }}</h4>
                     </div>
                     <div class="col-sm-4 animation-fadeIn">
-                        <a href="{{ asset('https://twitter.com/')}}" target="_blank" class="circle themed-background">
+                        <a href="https://twitter.com/" target="_blank" class="circle themed-background">
                             <i class="fa fa-twitter"></i>
                         </a>
                         <h4><strong>{{ __('Tweet') }}</strong>{{ __(' Us') }}</h4>

@@ -312,6 +312,6 @@
 @endsection
 
 @section('javascript')
-    <script src="{!! url('bower_components/chart.js/Chart.min.js') !!}"></script>
+    <script src="{!! url('bower_components/chart.js/Chart.js') !!}"></script>
     <script src="{!! url('js/admin/admin-index-chart.js') !!}"></script>
 @endsection

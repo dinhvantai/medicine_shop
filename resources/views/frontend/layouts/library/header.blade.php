@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Site Logo -->
         <a href="{{ route('welcome') }}" class="site-logo col-md-3">
-            <i class="gi gi-flash"></i> <strong>{{ __('Framgia') }}</strong>{{ __('Medicines') }}
+            {{ __('Medicines') }}
         </a>
         <!-- End Site Logo -->
         <div class="col-md-3" id="area-search-header-form-id">

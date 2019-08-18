@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-5 col-md-5 left">
                 <h4 class="footer-heading">{{ date('Y') }} &copy; 
-                <a href="{{ url('') }}">{{ __('Framgia Medicines') }}</a></h4>
+                <a href="{{ url('') }}">{{ __('Medicines') }}</a></h4>
                 <ul class="footer-nav list-inline">
                     <li>
                         {{ __('Provide best quality healthcare for you') }}

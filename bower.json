@@ -2,11 +2,7 @@
   "name": "medicines",
   "description": "",
   "main": "",
-  "authors": [
-    "Pham Le Tuan <tuanphamle112@gmail.com>"
-  ],
   "license": "MIT",
-  "homepage": "https://github.com/tuanphamle112/medicine_shop",
   "ignore": [
     "**/.*",
     "node_modules",
